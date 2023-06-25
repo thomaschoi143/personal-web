@@ -32,10 +32,12 @@ header {
 	z-index: 99;
 
 	.container {
+		position: relative;
 		padding-top: 32px;
 		padding-bottom: 32px;
 		display: flex;
 		justify-content: space-between;
+		z-index: 99;
 
 		h2 {
 			color: inherit;
