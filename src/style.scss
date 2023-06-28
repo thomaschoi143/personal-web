@@ -1,0 +1,129 @@
+$primary-color: #1d1d1f;
+$white-text-color: #f5f5f7;
+$dark-grey-color: #636e72;
+$grey-color: #a1a1a6;
+$sky-blue-color: #2997ff;
+$purple-color: #b429f9;
+$orange-color: #ff981f;
+
+//#be22ff 20%,#ff279c 50%,#ff981f 80%);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: "Fira Sans", sans-serif;
+}
+
+section h2 {
+	text-align: center;
+	margin-bottom: 32px;
+	text-transform: uppercase;
+
+	color: #313131;
+	font-size: 36px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-left: 128px;
+	padding-right: 128px;
+	align-items: center;
+
+	@media (max-width: 1024px) {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+
+	@media (max-width: 768px) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
+.button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	background-color: $sky-blue-color;
+	padding: 12px 20px;
+	border-radius: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+
+	@media (max-width: 768px) {
+		font-size: 18px;
+	}
+}
+
+.purple-gradient {
+	background-image: #8e2de2;
+	background-image: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+	background-image: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+.purple-orange-gradient {
+	background-color: #ff279c;
+	background-image: -webkit-linear-gradient(90deg, #be22ff 20%, #ff279c 50%, #ff981f 80%);
+	background-image: linear-gradient(90deg, #be22ff 20%, #ff279c 50%, #ff981f 80%);
+}
+
+.purple-blue-gradient {
+	background-color: #b429f9;
+	background-image: -webkit-linear-gradient(to right, hsl(294, 96%, 50%), hsl(201, 96%, 50%));
+	background-image: linear-gradient(to right, hsl(294, 96%, 50%), hsl(201, 96%, 50%));
+}
+
+.green-gradient {
+	background-color: #6ef195;
+	background-image: -webkit-linear-gradient(to right, #6ef195, #00e3fd);
+	background-image: linear-gradient(to right, #6ef195, #00e3fd);
+}
+
+.white-gradient {
+	background-color: hsl(0, 0%, 98%);
+	background-image: -webkit-linear-gradient(to right bottom, hsl(0, 0%, 98%), hsl(0, 0%, 96%));
+	background-image: linear-gradient(to right bottom, hsl(0, 0%, 98%), hsl(0, 0%, 96%));
+}
+
+.card-box-shadow {
+	box-shadow: -4px 4px 26px 2px hsla(184, 50%, 20%, 0.1);
+}
+
+.gradient-text {
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+.typing-effect {
+	opacity: 0;
+	font-family: monospace;
+	color: #0000;
+	background: linear-gradient(-90deg, #fff 5px, #0000 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+	background-size: calc(var(--n) * 1ch) 200%;
+	-webkit-background-clip: padding-box, text;
+	background-clip: padding-box, text;
+	background-repeat: no-repeat;
+}
+
+@keyframes typing {
+	from {
+		background-size: 0 200%;
+	}
+}
+@keyframes blink {
+	50% {
+		background-position: 0 -100%, 0 0;
+	}
+}

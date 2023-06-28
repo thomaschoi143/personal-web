@@ -1,13 +1,397 @@
 {
-    "name": "Thomas Choi",
-    "contact": {
-        "email": "thomasa143a@gmail.com"
-    },
     "projects": [
+        {
+            "name": "Personal Website",
+            "startDate": "Jul 2023",
+            "status": "Maintaining",
+            "category": "personal",
+            "workload": 20,
+            "github": "https://github.com/thomaschoi143/personal-web",
+            "description": [
+                "Hi there, welcome to my personal website and please enjoy!"
+            ],
+            "techs": [
+                "Vue",
+                "Scss"
+            ]
+        },
+        {
+            "name": "MERN User Authentication",
+            "startDate": "Jun 2023",
+            "status": "Finished",
+            "category": "personal",
+            "github": "https://github.com/thomaschoi143/MERN-user-authentication",
+            "workload": 4,
+            "description": [
+                "A MERN application with user authentication (sign in, sign up, update profile) using HTTP-only cookie"
+            ],
+            "techs": [
+                "MERN",
+                "Redux",
+                "JWT",
+                "HTTP-only cookie",
+                "Bootstrap"
+            ]
+        },
+        {
+            "name": "Jobs Finding App",
+            "startDate": "Jun 2023",
+            "status": "Finished",
+            "category": "personal",
+            "github": "https://github.com/thomaschoi143/react-native-jobs",
+            "workload": 4,
+            "description": [
+                "My first React Native mobile app for finding jobs using the JSearch API with searching and routing features"
+            ],
+            "techs": [
+                "React Native",
+                "Expo"
+            ]
+        },
+        {
+            "name": "Page Manager",
+            "startDate": "Jun 2023",
+            "category": "personal",
+            "status": "Finished",
+            "github": "https://github.com/thomaschoi143/vue-page-manager",
+            "workload": 2,
+            "description": [
+                "A Vue application to manage and edit pages with local storage"
+            ],
+            "techs": [
+                "Vue",
+                "Bootstrap"
+            ]
+        },
+        {
+            "name": "Remote Procedure Call System",
+            "startDate": "May 2023",
+            "status": "Finished",
+            "category": "UniMelb",
+            "workload": 50,
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP30023_ComputerSystems/project2",
+            "marks": "14.75 / 15",
+            "description": [
+                "Provide a way for a client to call a function on a remote server as if it were a local function call"
+            ],
+            "techs": [
+                "C",
+                "socket programming"
+            ]
+        },
+        {
+            "name": "Pacman in the ToruseVerse",
+            "startDate": "May 2023",
+            "status": "Finished",
+            "category": "UniMelb",
+            "workload": 30,
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/SWEN30006_SoftwareModellingAndDesign/project2",
+            "marks": "X / 20",
+            "description": [
+                "Extended from Pacman in the Multiverse",
+                "Provide a map editor to add, delete, update the characters on the map",
+                "Introduce a teleportation feature",
+                "Designed and evaluated with GRASP principles and GoF patterns"
+            ],
+            "techs": [
+                "Java",
+                "Software Modelling and Design",
+                "UML Diagrams"
+            ]
+        },
+        {
+            "name": "Pacman in the Multiverse",
+            "startDate": "Apr 2023",
+            "status": "Finished",
+            "category": "UniMelb",
+            "workload": 40,
+            "github": "https://github.com/thomaschoi143/my-shopping-cart",
+            "marks": "11.5 / 12",
+            "description": [
+                "The classic arcade game Pacman with additional features (various monsters and items)",
+                "Designed following the GRASP principles",
+                "Evaluated the design with a 4-page report"
+            ],
+            "techs": [
+                "Java",
+                "Software Modelling and Design",
+                "UML Diagrams"
+            ]
+        },
+        {
+            "name": "Process Management",
+            "startDate": "May 2023",
+            "status": "Finished",
+            "category": "UniMelb",
+            "workload": 50,
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP30023_ComputerSystems/project1",
+            "marks": "14.75 / 15",
+            "description": [
+                "A process manager simulation of memory allocation and process scheduling"
+            ],
+            "techs": [
+                "C",
+                "Data structure",
+                "pipe"
+            ]
+        },
+        {
+            "name": "My Shopping Cart",
+            "startDate": "Feb 2023",
+            "status": "Developing",
+            "category": "personal",
+            "workload": 50,
+            "link": "https://thomaschoi143.github.io/my-shopping-cart/",
+            "github": "https://github.com/thomaschoi143/my-shopping-cart",
+            "description": [
+                "Provide shopping cart, comments and searching features with user authentication on a serverless web application"
+            ],
+            "techs": [
+                "React",
+                "Redux",
+                "TypeScript",
+                "Bootstrap",
+                "MongoDB",
+                "GraphQL",
+                "MongoDB Realm"
+            ]
+        },
+        {
+            "name": "Shadow Pirate",
+            "startDate": "May 2022",
+            "status": "Finished",
+            "category": "UniMelb",
+            "workload": 50,
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/SWEN20003_ObjectOrientedSoftwareDevelopment/Project2",
+            "marks": "21.5 / 22",
+            "description": [
+                "A role-playing game with 2 different levels",
+                "User has to control the sailor to evade the projectiles fired by the enemies and reach the ladder",
+                "The sailor can fight back the enemies and pick up magic items on the map"
+            ],
+            "techs": [
+                "Java",
+                "UML Diagrams"
+            ]
+        },
         {
             "name": "A Weather Website in Macao",
             "startDate": "2018 Aug",
-            "endDate": "Present"
+            "status": "Maintaining",
+            "workload": 300,
+            "category": "personal",
+            "link": "http://std.puiching.edu.mo/~pcmsams/",
+            "description": [
+                "My first website published on the Interent; motivated by an interest in meteorology",
+                "Visualise and help analyse weather data from 10 official weather stations for the public",
+                "Already reached 21K+ users and 46.9K+ sessions locally and worldwide"
+            ],
+            "techs": [
+                "jQuery",
+                "SQL",
+                "highcharts.js",
+                "REST APIs",
+                "Relational Database Management"
+            ]
         }
-    ]
+    ],
+    "portfolio": {
+        "experience": [
+            {
+                "company": {
+                    "name": "Melbourne Space Program",
+                    "icon": "melbournespace.png",
+                    "link": "https://www.melbournespace.com.au/",
+                    "linkedin": "https://www.linkedin.com/company/melbourne-space-program/"
+                },
+                "positions": [
+                    {
+                        "name": "ACRUX-II Software Engineer",
+                        "start": "Apr 2023",
+                        "end": "Present",
+                        "responsibilities": [
+                            "Developed on-board computer subsystem for cube satellite with a team of 4 students",
+                            "Designed a low-level API endpoint for other subsystems of the cube satellite"
+                        ]
+                    }
+                ],
+                "skills": [
+                    "C++",
+                    "NASA FPrime"
+                ]
+            },
+            {
+                "company": {
+                    "name": "UniMelb Computing and Information Systems Students Association (CISSA)",
+                    "icon": "cissa.jpeg",
+                    "link": "https://cissa.org.au/",
+                    "linkedin": "https://www.linkedin.com/company/cissa-unimelb/"
+                },
+                "positions": [
+                    {
+                        "name": "Education Officer",
+                        "start": "Apr 2022",
+                        "end": "Nov 2022",
+                        "responsibilities": [
+                            "Collaborated with 3 department members to organised 2 final exam revision workshops for 100+ students in total",
+                            "Demonstrated in 2 exam revision workshops for 30+ students in total",
+                            "Created and presented an Introduction to Git at the Catalyst hackathon for 10+ students"
+                        ]
+                    }
+                ],
+                "skills": [
+                    "Communication",
+                    "Event Planning",
+                    "Public Speaking"
+                ]
+            },
+            {
+                "company": {
+                    "name": "Sensand",
+                    "icon": "sensand.jpeg",
+                    "link": "https://sensand.com/",
+                    "linkedin": "https://www.linkedin.com/company/sensand/"
+                },
+                "positions": [
+                    {
+                        "name": "Software Engineer Intern",
+                        "start": "Jul 2022",
+                        "end": "Oct 2022",
+                        "responsibilities": [
+                            "Collaborated with a team of 6 people to develop front end of unified AgTech platform"
+                        ]
+                    }
+                ],
+                "skills": [
+                    "Agile Development",
+                    "Teamwork",
+                    "Angular",
+                    "JEST",
+                    "RxJS",
+                    "Tailwind CSS",
+                    "REST APIs"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "company": {
+                    "name": "The University of Melbourne",
+                    "icon": "unimelb.png"
+                },
+                "positions": [
+                    {
+                        "name": "Bsc Compouting and Software Systems",
+                        "start": "Mar 2021",
+                        "end": "Dec 2023",
+                        "subjects": [
+                            "Algorithms and Data Structures",
+                            "Machine Learning",
+                            "Object Oriented Software Development",
+                            "Declarative Programming"
+                        ]
+                    }
+                ]
+            },
+            {
+                "company": {
+                    "name": "The Chinese University of Hong Kong",
+                    "icon": "cuhk.jpg"
+                },
+                "positions": [
+                    {
+                        "name": "BSc in Engineering",
+                        "start": "Sep 2020",
+                        "end": "Jan 2021",
+                        "GPA": "3.93 / 4.0",
+                        "responsibilities": [
+                            "Discontinued studies and transferred to the University of Melbourne"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "awards": [
+            {
+                "name": "Dean's Honours List for Top 3% - Second Year",
+                "issuer": "The University of Melbourne",
+                "link": "https://science.unimelb.edu.au/students/current-students-news-events/the-deans-honours-list-2022-celebrating-the-highest-achieving-students-in-science",
+                "icon": "unimelb.png",
+                "description": "Received this honour in recognition of the academic excellence in the second year of the bachelor study",
+                "date": "May 2023"
+            },
+            {
+                "name": "Dean's Honours List for Top 3% - First Year",
+                "issuer": "The University of Melbourne",
+                "link": "https://science.unimelb.edu.au/students/current-students-news-events/celebrating-our-best-students-with-deans-honours3",
+                "icon": "unimelb.png",
+                "description": "Received this honour in recognition of the academic excellence in the first year of the bachelor study",
+                "date": "Aug 2022"
+            },
+            {
+                "name": "Melbourne International Undergraduate Scholarship",
+                "issuer": "The University of Melbourne",
+                "link": "https://scholarships.unimelb.edu.au/awards/melbourne-international-undergraduate-scholarship",
+                "icon": "unimelb.png",
+                "description": "Scholarship for international undergraduate students in recognition of their academic achievements",
+                "date": "Jan 2022"
+            },
+            {
+                "name": "Honours at Entrance",
+                "link": "https://admission.cuhk.edu.hk/scholarships/admission.html",
+                "issuer": "The Chinese University of Hong Kong",
+                "description": "Admission scholarship for undergraduate students in recognition of their excellent academic performance in high school",
+                "icon": "cuhk.jpg",
+                "date": "Sep 2020"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "AWS Certified Cloud Practitioner",
+                "issuer": "Amazon Web Services (AWS)",
+                "link": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+                "icon": "aws.jpg",
+                "date": "Mar 2023",
+                "verify": "https://www.credly.com/badges/06362379-c31c-4c95-ba9d-19b6e10b2c0c/linked_in_profile"
+            },
+            {
+                "name": "Associate Member",
+                "issuer": "Australian Computer Society (ACS)",
+                "link": "https://www.acs.org.au/",
+                "icon": "acs.jpg",
+                "date": "Feb 2023"
+            },
+            {
+                "name": "Melbourne Plus: Innovation",
+                "issuer": "The University of Melbourne",
+                "link": "https://students.unimelb.edu.au/student-life/melbourne-plus",
+                "icon": "innovation.png",
+                "verify": "https://unimelb.badgr.io/public/assertions/yRw6xrDXTB2PZU8PPHwO0w",
+                "date": "Jun 2023"
+            },
+            {
+                "name": "Melbourne Employability Accelerator",
+                "link": "https://students.unimelb.edu.au/careers/get-career-ready/leadership-and-employability-programs/melbourne-employability-accelerator",
+                "verify": "https://openbadgepassport.com/app/badge/info/557136",
+                "issuer": "Practera",
+                "icon": "dip.png",
+                "date": "Apr 2023"
+            },
+            {
+                "name": "International A-Level 3A*",
+                "link": "https://qualifications.pearson.com/en/qualifications/edexcel-international-advanced-levels.html",
+                "issuer": "Pearson",
+                "icon": "ial.png",
+                "date": "Jun 2020"
+            }
+        ]
+    },
+    "contact": {
+        "motto": "Always exploring and creating state-of-the-art software products improving people's lives and the world.",
+        "location": "Melbourne, Australia",
+        "email": "thomasa143a@gmail.com",
+        "github": "https://github.com/thomaschoi143",
+        "linkedin": "https://www.linkedin.com/in/thomas-choi-melb/",
+        "instagram": "https://www.instagram.com/thomas_choi_/"
+    }
 }

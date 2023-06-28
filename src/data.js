@@ -6,9 +6,16 @@ const loadJson = async () => {
 };
 
 export default {
-	getProjects() {
-		const data = loadJson();
-
+	async getContact() {
+		const data = await loadJson();
+		return data.contact;
+	},
+	async getProjects() {
+		const data = await loadJson();
 		return data.projects;
+	},
+	async getExperience() {
+		const data = await loadJson();
+		return data.portfolio;
 	},
 };

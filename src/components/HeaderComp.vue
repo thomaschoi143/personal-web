@@ -23,6 +23,8 @@ function toggleIsActive() {
 }
 </script>
 <style lang="scss" scope>
+@import "../style.scss";
+
 header {
 	color: #fff;
 	position: fixed;
@@ -58,7 +60,7 @@ header {
 	}
 
 	&.is-scrolling {
-		background-color: #12002f;
+		background-color: $primary-color;
 
 		.container {
 			padding-top: 16px;
