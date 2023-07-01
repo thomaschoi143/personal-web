@@ -1,30 +1,62 @@
 <template>
 	<nav>
-		<router-link v-for="(view, index) in views" :to="`/${view.link}`" :key="index">{{
-			view.name
-		}}</router-link>
+		<router-link
+			v-for="(view, index) in views"
+			:to="view.link"
+			:key="index"
+			:class="{ 'on-this-view': isOnThisView(view.link) }"
+			@click="toggle ? toggle() : ''"
+			>{{ view.name }}</router-link
+		>
 	</nav>
 </template>
 <script setup>
+import { defineProps } from "vue";
+import { useRoute } from "vue-router";
+
+const { toggle } = defineProps(["toggle"]);
+const route = useRoute();
+const isOnThisView = (linkName) => linkName === route.fullPath;
 const views = [
 	{
-		name: "Home",
-		link: "/",
+		name: "About",
+		link: "/about",
 	},
 	{
 		name: "Projects",
-		link: "project",
+		link: "/projects",
+	},
+	{
+		name: "Portfolio",
+		link: "/#portfolio",
 	},
 	{
 		name: "Contact",
-		link: "contact",
+		link: "/#contact-section",
 	},
 ];
 </script>
-<style scope>
+<style lang="scss" scoped>
+@import "../style.scss";
+
 a {
-	color: inherit;
-	font-size: 20px;
-	text-decoration: none;
+	&::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 2px;
+		background: #fff;
+		transition: all 0.3s;
+	}
+
+	&:hover,
+	&.on-this-view {
+		color: #dcdde1;
+	}
+
+	&:hover::after,
+	&.on-this-view::after {
+		width: 100%;
+	}
 }
 </style>

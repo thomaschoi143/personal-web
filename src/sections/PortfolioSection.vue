@@ -1,5 +1,5 @@
 <template>
-	<section class="portfolio" v-if="portfolio">
+	<section class="portfolio">
 		<div class="container">
 			<h2 class="purple-gradient gradient-text">Portfolio</h2>
 			<section class="experience">
@@ -18,6 +18,7 @@
 							v-for="(cert, index) in portfolio.awards"
 							:key="index"
 							:cert="cert"
+							direction="left"
 						/>
 					</ul>
 				</div>
@@ -28,6 +29,7 @@
 							v-for="(cert, index) in portfolio.certifications"
 							:key="index"
 							:cert="cert"
+							direction="right"
 						/>
 					</ul>
 				</div>
@@ -36,17 +38,13 @@
 	</section>
 </template>
 <script setup>
-import { inject, ref } from "vue";
+import { inject } from "vue";
 import PortfolioCards from "../components/PortfolioCards.vue";
 import certificateCard from "../components/certificateCard.vue";
 
 const data = inject("$data");
 
-const portfolio = ref(null);
-
-data.getExperience()
-	.then((r) => (portfolio.value = r))
-	.catch((e) => console.log(e));
+const portfolio = data.getPortfolio();
 </script>
 <style lang="scss" scoped>
 @import "../style.scss";
@@ -55,7 +53,7 @@ section.portfolio {
 	overflow-x: hidden;
 
 	.container {
-		padding-top: 64px;
+		padding-top: 90px;
 		padding-bottom: 64px;
 
 		h3 {
@@ -74,8 +72,12 @@ section.portfolio {
 
 				margin-top: 10px;
 
+				@media (max-width: $tablet-width) {
+					display: block;
+				}
+
 				h3 {
-					margin-bottom: 10px;
+					margin-bottom: 15px;
 				}
 			}
 		}

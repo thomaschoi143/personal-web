@@ -2,14 +2,23 @@
 	<section class="banner">
 		<div class="container">
 			<h1>
-				Website you're <br class="hide-mob" /><span
-					class="purple-blue-gradient gradient-text"
-					>not afraid</span
-				>
-				to share
+				Hello World! <br />
+				I am <span class="gradient-text purple-blue-gradient">Thomas Choi</span>
 			</h1>
-			<h3>Website solutions for all your needs</h3>
-			<router-link to="/" class="button">Find out more</router-link>
+			<h3>Final-Year Computer Science Students @UniMelb</h3>
+			<h4 style="display: inline-block">
+				<span class="typing-effect show-typing-effect" style="--n: 42">
+					Software Engineer | <br />Frontend Developer | <br />Designer
+				</span>
+			</h4>
+			<h4>
+				Always <span class="keyword">learning</span>. <br />
+				Always <span class="keyword">developing</span>. <br />
+				Always <span class="keyword">improving</span>.<br />
+			</h4>
+			<router-link to="/about" class="button purple-orange-gradient purple-box-shadow"
+				>Learn More</router-link
+			>
 		</div>
 	</section>
 </template>
@@ -23,8 +32,8 @@ section.banner {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	background-image: url("/header.jpg");
-	background-position: center right;
+	background-image: url("../assets/banner.jpg");
+	background-position: center left;
 	background-size: cover;
 
 	&:after {
@@ -37,7 +46,7 @@ section.banner {
 		bottom: 0;
 		z-index: 0;
 		background-color: $primary-color;
-		opacity: 0.7;
+		opacity: 0.6;
 	}
 
 	.container {
@@ -52,7 +61,7 @@ section.banner {
 				color: $sky-blue-color;
 			}
 
-			@media (max-width: 768px) {
+			@media (max-width: $phone-width) {
 				font-size: 32px;
 			}
 		}
@@ -60,18 +69,50 @@ section.banner {
 		h3 {
 			font-size: 36px;
 			font-weight: 400;
-			margin-bottom: 32px;
+			margin-bottom: 10px;
 
-			@media (max-width: 768px) {
-				font-size: 18px;
+			@media (max-width: $phone-width) {
+				font-size: 20px;
 			}
 		}
-	}
-}
 
-@media (max-width: 768px) {
-	.hide-mob {
-		display: none;
+		h4 {
+			font-size: 25px;
+			margin-bottom: 40px;
+			padding: 5px 0;
+			font-weight: 400;
+
+			br {
+				display: none;
+			}
+
+			@media (max-width: $phone-width) {
+				font-size: 20px;
+				margin-bottom: 20px;
+
+				br {
+					display: initial;
+				}
+			}
+
+			.show-typing-effect {
+				opacity: 1;
+				animation: blink 0.05s infinite steps(1),
+					typing calc(var(--n) * 0.05s) steps(var(--n)) forwards;
+			}
+
+			.keyword {
+				color: $purple-color;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+
+		@media (max-width: $phone-width) {
+			.button {
+				margin-top: 20px;
+			}
+		}
 	}
 }
 </style>

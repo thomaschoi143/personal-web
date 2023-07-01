@@ -18,9 +18,16 @@ span {
 	text-transform: uppercase;
 	margin-right: 10px;
 	margin-bottom: 10px;
+	transition: transform 0.3s ease-out;
+
+	cursor: pointer;
 
 	&:hover {
 		color: #fff !important;
+	}
+
+	&:active {
+		transform: scale(130%);
 	}
 }
 

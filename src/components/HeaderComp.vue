@@ -1,13 +1,15 @@
 <template>
 	<header :class="{ 'is-scrolling': isScrolling }">
 		<div class="container">
-			<h2>Thomas Choi</h2>
+			<router-link to="/" @click="isActive ? toggleIsActive() : ''">
+				<h2>Thomas Choi</h2>
+			</router-link>
 			<navbar />
 			<button class="hamburger" :class="{ 'is-active': isActive }" @click="toggleIsActive()">
 				<div class="bar"></div>
 			</button>
 		</div>
-		<navbar class="mobile-nav" :class="{ 'is-active': isActive }" />
+		<navbar class="mobile-nav" :class="{ 'is-active': isActive }" :toggle="toggleIsActive" />
 	</header>
 </template>
 <script setup>
@@ -46,6 +48,13 @@ header {
 			text-transform: uppercase;
 			font-size: 32px;
 			font-weight: 600;
+			transition: all 0.3s ease-in-out;
+
+			@media (pointer: fine) {
+				&:hover {
+					color: #95a5a6;
+				}
+			}
 		}
 
 		nav {
@@ -53,7 +62,7 @@ header {
 			grid-gap: 16px;
 			grid-template-columns: repeat(4, auto);
 
-			@media (max-width: 768px) {
+			@media (max-width: $phone-width) {
 				display: none;
 			}
 		}
@@ -71,7 +80,7 @@ header {
 
 .hamburger {
 	position: relative;
-	display: block;
+	display: none;
 	width: 35px;
 	cursor: pointer;
 
@@ -107,13 +116,13 @@ header {
 
 .mobile-nav {
 	position: fixed;
-	display: block;
+	display: none;
 	top: 0;
 	left: 100%;
 	width: 100%;
 	min-height: 100vh;
 	z-index: 98;
-	background-color: #12002f;
+	background-color: $primary-color;
 	padding-top: 120px;
 	transition: 0.4s;
 
@@ -124,7 +133,7 @@ header {
 		margin: 0 auto 16px;
 		text-align: center;
 		padding: 12px 16px;
-		background-color: #1f103f;
+		font-size: 22px;
 
 		color: #fff;
 		text-decoration: none;
@@ -135,17 +144,13 @@ header {
 	left: 0;
 }
 
-.mobile-nav a:hover {
-	background-color: #241044;
-}
-
-@media (min-width: 768px) {
+@media (max-width: $phone-width) {
 	.mobile-nav {
-		display: none;
+		display: block;
 	}
 
 	.hamburger {
-		display: none;
+		display: block;
 	}
 }
 </style>

@@ -1,10 +1,11 @@
 <template>
 	<section class="contact">
 		<div class="container">
-			<h2 class="gradient-text purple-orange-gradient">Contact</h2>
-			<div class="card" v-if="contact">
+			<h2 class="gradient-text purple-orange-gradient">Get in touch?</h2>
+			<div class="card">
 				<div class="card-content">
 					<h3 class="card-title">Thomas Choi</h3>
+					<p class="title">Software Engineer</p>
 					<h4 class="card-subtitle">
 						<span class="typing-effect" :style="{ '--n': contact.motto.length }">
 							{{ contact.motto }}
@@ -19,6 +20,13 @@
 							<font-awesome-icon :icon="['fas', 'envelope']" class="card-icon" />
 							{{ contact.email }}
 						</p>
+					</div>
+
+					<div class="skills">
+						<span v-for="i in contact.techs.length" :key="i">
+							{{ contact.techs[i - 1] }}
+							{{ i < contact.techs.length ? " | " : "" }}
+						</span>
 					</div>
 
 					<div class="links">
@@ -40,28 +48,33 @@
 	</section>
 </template>
 <script setup>
-import { inject, ref } from "vue";
+import { inject } from "vue";
 
 const data = inject("$data");
-const contact = ref(null);
-
-data.getContact()
-	.then((r) => (contact.value = r))
-	.catch((e) => console.log(e));
+const contact = data.getContact();
 </script>
 <style lang="scss" scoped>
 @import "../style.scss";
 section.contact {
 	background-color: $primary-color;
-	height: calc(100vh - 70.5px);
+	min-height: calc(100vh - 70.5px);
 
 	.container {
-		padding-top: 64px;
+		padding-top: 128px;
 		padding-bottom: 64px;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+
+		h2 {
+			font-size: 60px;
+			letter-spacing: 1px;
+
+			@media (max-width: $phone-width) {
+				font-size: 40px;
+			}
+		}
 
 		.card {
 			aspect-ratio: 1 / 0.7;
@@ -71,6 +84,10 @@ section.contact {
 			position: relative;
 			width: 100%;
 			max-width: 700px;
+
+			@media (max-width: $phone-width) {
+				aspect-ratio: auto;
+			}
 
 			&:before {
 				background: linear-gradient(
@@ -125,31 +142,58 @@ section.contact {
 				transition: background-position 350ms ease;
 				z-index: 2;
 
+				@media (max-width: $phone-width) {
+					padding: 30px;
+				}
+
 				.card-title {
 					font-weight: 900;
 
 					font-size: 45px;
 					letter-spacing: 2px;
+					margin-bottom: 5px;
+
+					@media (max-width: $phone-width) {
+						font-size: 30px;
+					}
 				}
+
+				.title {
+					font-size: 22px;
+
+					@media (max-width: $phone-width) {
+						font-size: 20px;
+					}
+				}
+
 				.card-subtitle {
-					padding: 10px 0;
+					padding-top: 5px;
+					padding-bottom: 10px;
 					font-size: 16px;
 				}
 
 				.contacts {
 					font-size: 20px;
 					margin-top: 20px;
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 
 					p {
 						margin: 10px 0;
 					}
+
+					@media (max-width: $phone-width) {
+						font-size: 18px;
+					}
+				}
+
+				.skills {
+					line-height: 22px;
 				}
 
 				.links {
 					display: flex;
 					justify-content: center;
-					margin-top: 60px;
+					margin-top: 20px;
 
 					.card-icon {
 						color: rgba(255, 255, 255, 0.5);
@@ -160,6 +204,10 @@ section.contact {
 
 						&:hover {
 							color: #fff;
+						}
+
+						@media (max-width: $phone-width) {
+							font-size: 40px;
 						}
 					}
 				}

@@ -1,8 +1,8 @@
 <template>
 	<banner-section />
 	<projects-section />
-	<portfolio-section />
-	<contact-section />
+	<portfolio-section id="portfolio" />
+	<contact-section id="contact-section" />
 </template>
 
 <script setup>

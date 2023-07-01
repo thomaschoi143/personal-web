@@ -1,5 +1,8 @@
 <template>
-	<li class="card">
+	<li
+		:class="['card', direction, isVisible && 'in-view']"
+		v-element-visibility="onElementVisibility"
+	>
 		<figure>
 			<img :src="getImgUrl('portfolio/' + cert.icon)" :alt="cert.name + ' logo'" />
 		</figure>
@@ -13,18 +16,26 @@
 			<p v-if="cert.description">{{ cert.description }}</p>
 			<div class="links" v-if="cert.link || cert.verify">
 				<a :href="cert.verify" target="_blank" v-if="cert.verify">
-					<skill-tag skill="Verify" color="grey" />
+					<skill-tag skill="Credential" color="grey" />
 				</a>
 			</div>
 		</content>
 	</li>
 </template>
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, ref } from "vue";
 import { getImgUrl } from "../utils";
 import SkillTag from "./SkillTag.vue";
+import { vElementVisibility } from "@vueuse/components";
 
-const { cert } = defineProps(["cert"]);
+const { cert, direction } = defineProps(["cert", "direction"]);
+const isVisible = ref(false);
+
+const onElementVisibility = (state) => {
+	if (state && !isVisible.value) {
+		isVisible.value = state;
+	}
+};
 </script>
 <style lang="scss" scoped>
 @import "../style.scss";
@@ -35,9 +46,32 @@ const { cert } = defineProps(["cert"]);
 	padding: 15px;
 	margin-bottom: 30px;
 
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.6s cubic-bezier(0.57, -0.01, 0.38, 1.01);
+
+	&.left {
+		transform: translateX(-300px);
+	}
+
+	&.right {
+		transform: translateX(300px);
+	}
+
+	&.in-view {
+		transform: none;
+		visibility: visible;
+		opacity: 1;
+	}
+
 	figure {
 		max-width: 100px;
 		padding: 14px;
+
+		@media (max-width: $phone-width) {
+			max-width: 80px;
+			padding: 10px;
+		}
 
 		img {
 			width: 100%;
@@ -71,15 +105,13 @@ const { cert } = defineProps(["cert"]);
 		.links {
 			display: flex;
 			justify-content: end;
+
 			a {
-				font-size: 20px;
+				font-size: 18px;
+				margin-top: 15px;
 
 				span {
 					margin-bottom: 0;
-				}
-
-				&:hover {
-					color: $dark-grey-color;
 				}
 			}
 		}

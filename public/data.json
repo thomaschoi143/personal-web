@@ -3,13 +3,14 @@
         {
             "name": "Personal Website",
             "startDate": "Jul 2023",
-            "status": "Maintaining",
-            "category": "personal",
-            "workload": 20,
+            "status": "maintaining",
+            "icon": "personalWebsite.png",
+            "workload": 40,
             "github": "https://github.com/thomaschoi143/personal-web",
             "description": [
                 "Hi there, welcome to my personal website and please enjoy!"
             ],
+            "link": "https://thomaschoi.io",
             "techs": [
                 "Vue",
                 "Scss"
@@ -18,8 +19,8 @@
         {
             "name": "MERN User Authentication",
             "startDate": "Jun 2023",
-            "status": "Finished",
-            "category": "personal",
+            "status": "finished",
+            "icon": "userAuth.jpg",
             "github": "https://github.com/thomaschoi143/MERN-user-authentication",
             "workload": 4,
             "description": [
@@ -36,8 +37,8 @@
         {
             "name": "Jobs Finding App",
             "startDate": "Jun 2023",
-            "status": "Finished",
-            "category": "personal",
+            "status": "finished",
+            "icon": "jobsFinding.png",
             "github": "https://github.com/thomaschoi143/react-native-jobs",
             "workload": 4,
             "description": [
@@ -51,8 +52,8 @@
         {
             "name": "Page Manager",
             "startDate": "Jun 2023",
-            "category": "personal",
-            "status": "Finished",
+            "status": "finished",
+            "icon": "pageManager.jpg",
             "github": "https://github.com/thomaschoi143/vue-page-manager",
             "workload": 2,
             "description": [
@@ -66,8 +67,8 @@
         {
             "name": "Remote Procedure Call System",
             "startDate": "May 2023",
-            "status": "Finished",
-            "category": "UniMelb",
+            "status": "finished",
+            "icon": "",
             "workload": 50,
             "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP30023_ComputerSystems/project2",
             "marks": "14.75 / 15",
@@ -82,8 +83,8 @@
         {
             "name": "Pacman in the ToruseVerse",
             "startDate": "May 2023",
-            "status": "Finished",
-            "category": "UniMelb",
+            "status": "finished",
+            "icon": "pacmanToruseVerse.png",
             "workload": 30,
             "github": "https://github.com/thomaschoi143/Unimelb/tree/main/SWEN30006_SoftwareModellingAndDesign/project2",
             "marks": "X / 20",
@@ -102,8 +103,8 @@
         {
             "name": "Pacman in the Multiverse",
             "startDate": "Apr 2023",
-            "status": "Finished",
-            "category": "UniMelb",
+            "status": "finished",
+            "icon": "pacmanMultiverse.png",
             "workload": 40,
             "github": "https://github.com/thomaschoi143/my-shopping-cart",
             "marks": "11.5 / 12",
@@ -121,8 +122,8 @@
         {
             "name": "Process Management",
             "startDate": "May 2023",
-            "status": "Finished",
-            "category": "UniMelb",
+            "status": "finished",
+            "icon": "",
             "workload": 50,
             "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP30023_ComputerSystems/project1",
             "marks": "14.75 / 15",
@@ -138,8 +139,8 @@
         {
             "name": "My Shopping Cart",
             "startDate": "Feb 2023",
-            "status": "Developing",
-            "category": "personal",
+            "status": "developing",
+            "icon": "myShoppingCart.png",
             "workload": 50,
             "link": "https://thomaschoi143.github.io/my-shopping-cart/",
             "github": "https://github.com/thomaschoi143/my-shopping-cart",
@@ -159,8 +160,8 @@
         {
             "name": "Shadow Pirate",
             "startDate": "May 2022",
-            "status": "Finished",
-            "category": "UniMelb",
+            "status": "finished",
+            "icon": "shadowPirate.png",
             "workload": 50,
             "github": "https://github.com/thomaschoi143/Unimelb/tree/main/SWEN20003_ObjectOrientedSoftwareDevelopment/Project2",
             "marks": "21.5 / 22",
@@ -177,9 +178,9 @@
         {
             "name": "A Weather Website in Macao",
             "startDate": "2018 Aug",
-            "status": "Maintaining",
+            "status": "maintaining",
             "workload": 300,
-            "category": "personal",
+            "icon": "weatherWebsite.png",
             "link": "http://std.puiching.edu.mo/~pcmsams/",
             "description": [
                 "My first website published on the Interent; motivated by an interest in meteorology",
@@ -187,6 +188,7 @@
                 "Already reached 21K+ users and 46.9K+ sessions locally and worldwide"
             ],
             "techs": [
+                "PHP",
                 "jQuery",
                 "SQL",
                 "highcharts.js",
@@ -233,7 +235,7 @@
                         "start": "Apr 2022",
                         "end": "Nov 2022",
                         "responsibilities": [
-                            "Collaborated with 3 department members to organised 2 final exam revision workshops for 100+ students in total",
+                            "Collaborated with 3 department members to organise 2 final exam revision workshops for 100+ students in total",
                             "Demonstrated in 2 exam revision workshops for 30+ students in total",
                             "Created and presented an Introduction to Git at the Catalyst hackathon for 10+ students"
                         ]
@@ -277,7 +279,8 @@
             {
                 "company": {
                     "name": "The University of Melbourne",
-                    "icon": "unimelb.png"
+                    "icon": "unimelb.png",
+                    "link": "https://www.unimelb.edu.au/"
                 },
                 "positions": [
                     {
@@ -296,7 +299,8 @@
             {
                 "company": {
                     "name": "The Chinese University of Hong Kong",
-                    "icon": "cuhk.jpg"
+                    "icon": "cuhk.jpg",
+                    "link": "https://www.cuhk.edu.hk/"
                 },
                 "positions": [
                     {
@@ -381,6 +385,7 @@
                 "name": "International A-Level 3A*",
                 "link": "https://qualifications.pearson.com/en/qualifications/edexcel-international-advanced-levels.html",
                 "issuer": "Pearson",
+                "description": "Equivalent to 99 ATAR",
                 "icon": "ial.png",
                 "date": "Jun 2020"
             }
@@ -390,6 +395,41 @@
         "motto": "Always exploring and creating state-of-the-art software products improving people's lives and the world.",
         "location": "Melbourne, Australia",
         "email": "thomasa143a@gmail.com",
+        "techs": [
+            "React",
+            "Vue",
+            "React Native",
+            "Express",
+            "GraphQL",
+            "Java",
+            "TypeScript",
+            "Python",
+            "SQL",
+            "C"
+        ],
+        "frontend": [
+            "React",
+            "React Native",
+            "Vue",
+            "Redux",
+            "Bootstrap",
+            "Tailwind CSS",
+            "TypeScript",
+            "CSS",
+            "HTML",
+            "JavaScript"
+        ],
+        "backend": [
+            "Express",
+            "Node.js",
+            "MongoDB",
+            "SQL",
+            "GraphQL",
+            "PHP",
+            "Python",
+            "Java",
+            "C"
+        ],
         "github": "https://github.com/thomaschoi143",
         "linkedin": "https://www.linkedin.com/in/thomas-choi-melb/",
         "instagram": "https://www.instagram.com/thomas_choi_/"

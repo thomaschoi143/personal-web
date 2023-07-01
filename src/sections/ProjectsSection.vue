@@ -1,17 +1,17 @@
 <template>
-	<section class="projects" v-if="projects">
+	<section class="projects">
 		<div class="container">
 			<h2 class="purple-orange-gradient gradient-text">Projects</h2>
 		</div>
 		<div class="cards">
 			<div class="card" v-for="(project, index) in projects" :key="index">
 				<div class="card-info">
-					<span class="card-grad--video">{{ project.techs[0] }}</span>
-					<span>{{ project.date }}</span>
+					<span class="card-grad-tag">{{ project.techs[0] }}</span>
+					<span>{{ project.startDate }}</span>
 				</div>
 
 				<div class="card-heading">
-					<a :href="project.link || project.github" target="_blank">{{ project.name }}</a>
+					<a :href="project.github || project.link" target="_blank">{{ project.name }}</a>
 				</div>
 
 				<div class="card-tags">
@@ -21,7 +21,9 @@
 		</div>
 		<div class="container">
 			<div class="center">
-				<router-link to="/projects" class="button">View more</router-link>
+				<router-link to="/projects" class="button purple-blue-gradient purple-box-shadow"
+					>Read more</router-link
+				>
 			</div>
 		</div>
 	</section>
@@ -32,11 +34,7 @@ import SkillTag from "../components/SkillTag.vue";
 
 const data = inject("$data");
 
-const projects = ref(null);
-
-data.getProjects()
-	.then((r) => (projects.value = r))
-	.catch((e) => console.log(e));
+const projects = data.getProjects();
 </script>
 <style lang="scss" scoped>
 @import "../style.scss";
@@ -49,8 +47,8 @@ section.projects {
 		display: flex;
 		align-items: center;
 		overflow-x: scroll;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 80px;
+		padding-bottom: 80px;
 		padding-left: 128px;
 		-ms-overflow-style: none; /* Internet Explorer 10+ */
 		scrollbar-width: none; /* Firefox */
@@ -75,7 +73,7 @@ section.projects {
 		min-width: 300px;
 		max-width: 300px;
 		height: 400px;
-		margin-left: -80px;
+		margin-left: -60px;
 		border-radius: 40px;
 		padding: 30px;
 
@@ -111,14 +109,9 @@ section.projects {
 		}
 	}
 
-	.card-grad--video {
+	.card-grad-tag {
 		@extend .gradient-text;
 		@extend .purple-blue-gradient;
-	}
-
-	.card-grad--shot {
-		@extend .gradient-text;
-		@extend .green-gradient;
 	}
 
 	.card-heading {

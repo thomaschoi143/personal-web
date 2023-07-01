@@ -1,18 +1,30 @@
 $primary-color: #1d1d1f;
 $white-text-color: #f5f5f7;
-$dark-grey-color: #636e72;
 $grey-color: #a1a1a6;
+$dark-grey-color: #636e72;
+$light-sky-blue-color: #53aafc;
 $sky-blue-color: #2997ff;
 $purple-color: #b429f9;
 $orange-color: #ff981f;
+$green-color: #6ef195;
+$red-color: #d63031;
+$light-red-color: #e74c3c;
 
-//#be22ff 20%,#ff279c 50%,#ff981f 80%);
+$tablet-width: 1024px;
+$phone-width: 768px;
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 
 	font-family: "Fira Sans", sans-serif;
+}
+
+a {
+	color: inherit;
+	font-size: 20px;
+	text-decoration: none;
 }
 
 section h2 {
@@ -22,6 +34,10 @@ section h2 {
 
 	color: #313131;
 	font-size: 36px;
+
+	@media (max-width: $phone-width) {
+		font-size: 30px;
+	}
 }
 
 .container {
@@ -32,35 +48,38 @@ section h2 {
 	padding-right: 128px;
 	align-items: center;
 
-	@media (max-width: 1024px) {
+	@media (max-width: $tablet-width) {
 		padding-left: 64px;
 		padding-right: 64px;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: $phone-width) {
 		padding-left: 32px;
 		padding-right: 32px;
 	}
 }
 
 .button {
-	appearance: none;
-	border: none;
-	outline: none;
-	background: none;
-
 	display: inline-block;
-	color: #fff;
-	font-size: 20px;
-	background-color: $sky-blue-color;
-	padding: 12px 20px;
-	border-radius: 16px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 700;
+	padding: 12px 25px;
 	cursor: pointer;
 
-	@media (max-width: 768px) {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+
+	border-radius: 50px;
+	background-size: 300% 100%;
+
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-position: 100% 0;
+	}
+
+	@media (max-width: $phone-width) {
 		font-size: 18px;
 	}
 }
@@ -83,10 +102,20 @@ section h2 {
 	background-image: linear-gradient(to right, hsl(294, 96%, 50%), hsl(201, 96%, 50%));
 }
 
-.green-gradient {
-	background-color: #6ef195;
-	background-image: -webkit-linear-gradient(to right, #6ef195, #00e3fd);
-	background-image: linear-gradient(to right, #6ef195, #00e3fd);
+.dark-gradient {
+	background: #0f2027; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to bottom,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .white-gradient {
@@ -99,6 +128,10 @@ section h2 {
 	box-shadow: -4px 4px 26px 2px hsla(184, 50%, 20%, 0.1);
 }
 
+.purple-box-shadow {
+	box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.9);
+}
+
 .gradient-text {
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
@@ -108,7 +141,8 @@ section h2 {
 
 .typing-effect {
 	opacity: 0;
-	font-family: monospace;
+	font-weight: 400;
+	line-height: 23px;
 	color: #0000;
 	background: linear-gradient(-90deg, #fff 5px, #0000 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
 	background-size: calc(var(--n) * 1ch) 200%;

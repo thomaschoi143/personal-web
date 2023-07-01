@@ -8,7 +8,11 @@
 				/>
 			</figure>
 			<content>
-				<div class="card-heading">{{ experience.company.name }}</div>
+				<div class="card-heading">
+					<a :href="experience.company.link" target="_blank">{{
+						experience.company.name
+					}}</a>
+				</div>
 				<div
 					class="position"
 					v-for="(position, index) in experience.positions"
@@ -45,11 +49,19 @@
 						color="orange"
 					/>
 				</div>
-				<div class="links" v-if="experience.company.link">
-					<a :href="experience.company.link" target="_blank">
+				<div class="links" v-if="experience.company.link || experience.company.linkedin">
+					<a
+						:href="experience.company.link"
+						target="_blank"
+						v-if="experience.company.link"
+					>
 						<font-awesome-icon :icon="['fas', 'link']" />
 					</a>
-					<a :href="experience.company.linkedin" target="_blank">
+					<a
+						:href="experience.company.linkedin"
+						target="_blank"
+						v-if="experience.company.linkedin"
+					>
 						<font-awesome-icon :icon="['fab', 'linkedin']" />
 					</a>
 				</div>
@@ -106,6 +118,14 @@ li.timeline {
 		.card {
 			left: calc(-100vw + 250px);
 			transform: translateX(-300px);
+
+			@media (max-width: $tablet-width) {
+				left: calc(-100vw + 130px);
+			}
+
+			@media (max-width: $phone-width) {
+				left: calc(-100vw + 70px);
+			}
 		}
 	}
 
@@ -139,9 +159,25 @@ li.timeline {
 			width: 1300px;
 		}
 
+		@media (max-width: $tablet-width) {
+			width: calc(100vw - 170px);
+		}
+
+		@media (max-width: $phone-width) {
+			width: calc(100vw - 90px);
+			transform: translateX(100px);
+			flex-direction: column;
+			left: 30px;
+		}
+
 		figure {
 			max-width: 120px;
 			padding: 16px;
+
+			@media (max-width: $phone-width) {
+				margin: 0 auto;
+				padding: 5px;
+			}
 
 			img {
 				width: 100%;
@@ -159,6 +195,10 @@ li.timeline {
 				font-size: 22px;
 
 				margin: 10px 0;
+
+				a:hover {
+					text-decoration: underline;
+				}
 			}
 
 			.position {

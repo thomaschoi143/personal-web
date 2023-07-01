@@ -1,21 +1,13 @@
-const loadJson = async () => {
-	const res = await fetch("data.json");
-	const data = await res.json();
-
-	return data;
-};
+import data from "../public/data.json";
 
 export default {
-	async getContact() {
-		const data = await loadJson();
+	getContact() {
 		return data.contact;
 	},
-	async getProjects() {
-		const data = await loadJson();
+	getProjects() {
 		return data.projects;
 	},
-	async getExperience() {
-		const data = await loadJson();
+	getPortfolio() {
 		return data.portfolio;
 	},
 };
