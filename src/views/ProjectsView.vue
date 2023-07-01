@@ -8,8 +8,8 @@
 						<figure
 							:style="{
 								backgroundImage: project.icon
-									? `url('/assets/projects/${project.icon}')`
-									: `url('/assets/projects/placeholder.jpg')`,
+									? `url(${getImgUrl('projects/' + project.icon)})`
+									: `url(${getImgUrl('projects/placeholder.jpg')})`,
 							}"
 						></figure
 					></a>
@@ -73,6 +73,8 @@
 <script setup>
 import { inject } from "vue";
 import SkillTag from "../components/SkillTag.vue";
+import { getImgUrl } from "../utils";
+
 const data = inject("$data");
 
 const projects = data.getProjects();
