@@ -3,6 +3,7 @@
 Building with Vue.js. It includes highlights of my projects. Welcome to my personal website!
 
 ## LIVE DEMO
+https://thomaschoi.io/
 
 ## Preview
 <img width="1319" alt="Screen Shot 2023-07-01 at 11 49 26 pm" src="https://github.com/thomaschoi143/personal-web/assets/24365822/2e3299dc-fe74-4f72-8fbd-b494c795059f">
