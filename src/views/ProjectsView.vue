@@ -8,8 +8,8 @@
 						<figure
 							:style="{
 								backgroundImage: project.icon
-									? `url('src/assets/projects/${project.icon}')`
-									: `url('src/assets/projects/placeholder.jpg')`,
+									? `url('/assets/projects/${project.icon}')`
+									: `url('/assets/projects/placeholder.jpg')`,
 							}"
 						></figure
 					></a>
