@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# Personal Website
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Building with Vue.js. It includes highlights of my projects. Welcome to my personal website!
 
-## Recommended IDE Setup
+## LIVE DEMO
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Preview
+<img width="1319" alt="Screen Shot 2023-07-01 at 11 49 26 pm" src="https://github.com/thomaschoi143/personal-web/assets/24365822/2e3299dc-fe74-4f72-8fbd-b494c795059f">
+
+<img width="1319" alt="Screen Shot 2023-07-01 at 11 49 41 pm" src="https://github.com/thomaschoi143/personal-web/assets/24365822/e9165234-afd6-4705-8902-11714c47197f">
