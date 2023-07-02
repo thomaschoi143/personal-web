@@ -119,9 +119,12 @@ section {
 					background-size: cover;
 					position: relative;
 					height: 100%;
+					border-right: solid 1px lightgrey;
 
 					@media (max-width: $phone-width) {
 						height: 150px;
+						border-right: none;
+						border-bottom: solid 1px lightgrey;
 					}
 
 					&::before {
