@@ -11,7 +11,7 @@
 		>
 		<a
 			class="button purple-gradient resume"
-			:href="getImgUrl('Resume_ThomasChoi_web.pdf')"
+			href="/Resume_ThomasChoi_web.pdf"
 			target="_blank"
 			@click="toggle ? toggle() : ''"
 		>
@@ -22,7 +22,6 @@
 <script setup>
 import { defineProps } from "vue";
 import { useRoute } from "vue-router";
-import { getImgUrl } from "../utils";
 
 const { toggle } = defineProps(["toggle"]);
 const route = useRoute();
