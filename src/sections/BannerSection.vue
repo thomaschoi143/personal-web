@@ -88,7 +88,7 @@ section.banner {
 
 			@media (max-width: $phone-width) {
 				font-size: 20px;
-				margin-bottom: 20px;
+				margin-bottom: 18px;
 
 				br {
 					display: initial;

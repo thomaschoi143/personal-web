@@ -66,10 +66,10 @@ const onElementVisibility = (state) => {
 
 	figure {
 		max-width: 100px;
+		min-width: 85px;
 		padding: 14px;
 
 		@media (max-width: $phone-width) {
-			max-width: 80px;
 			padding: 10px;
 		}
 

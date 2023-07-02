@@ -55,6 +55,10 @@ header {
 					color: #95a5a6;
 				}
 			}
+
+			@media (max-width: $phone-width) {
+				font-size: 30px;
+			}
 		}
 
 		nav {

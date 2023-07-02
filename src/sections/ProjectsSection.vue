@@ -63,6 +63,8 @@ section.projects {
 
 		@media (max-width: 768px) {
 			padding-left: 32px;
+			padding-top: 0px;
+			padding-bottom: 32px;
 		}
 	}
 

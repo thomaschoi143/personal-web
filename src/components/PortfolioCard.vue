@@ -125,6 +125,7 @@ li.timeline {
 
 			@media (max-width: $phone-width) {
 				left: calc(-100vw + 70px);
+				transform: translateX(-100px);
 			}
 		}
 	}
@@ -230,6 +231,11 @@ li.timeline {
 				display: flex;
 				align-items: center;
 				justify-content: end;
+				margin-top: 10px;
+
+				@media (max-width: $phone-width) {
+					justify-content: center;
+				}
 
 				a {
 					margin-right: 15px;
