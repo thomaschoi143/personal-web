@@ -5,7 +5,13 @@
 			<div class="cards">
 				<div class="card" v-for="(project, index) in projects" :key="index">
 					<a :href="project.github || project.link" target="_blank" class="card-figure">
-						<figure style="background: blue"></figure
+						<figure
+							:style="{
+								backgroundImage: project.icon
+									? `url(${getImgUrl('projects/' + project.icon)})`
+									: `url(${getImgUrl('projects/placeholder.jpg')})`,
+							}"
+						></figure
 					></a>
 					<content>
 						<div class="card-info">
@@ -71,12 +77,6 @@ import { getImgUrl } from "../utils";
 
 const data = inject("$data");
 
-// {
-// 								backgroundImage: project.icon
-// 									? `url(${getImgUrl('projects/' + project.icon)})`
-// 									: `url(${getImgUrl('projects/placeholder.jpg')})`,
-// 							}
-
 const projects = data.getProjects();
 </script>
 <style lang="scss" scoped>
@@ -120,21 +120,20 @@ section {
 					background-position: center;
 					background-size: cover;
 					position: relative;
-					height: 100%;
+					height: 150px;
 
-					// &::before {
-					// 	content: "";
-					// 	display: block;
-					// 	position: absolute;
-					// 	top: 0;
-					// 	left: 0;
-					// 	right: 0;
-					// 	bottom: 0;
-					// 	z-index: 0;
-					// 	// @extend .purple-gradient;
-					// 	background: blue;
-					// 	opacity: 0.6;
-					// }
+					&::before {
+						content: "";
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						z-index: 0;
+						@extend .purple-gradient;
+						opacity: 0.6;
+					}
 				}
 			}
 
