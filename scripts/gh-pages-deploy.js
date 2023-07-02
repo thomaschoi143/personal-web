@@ -7,8 +7,7 @@ import fs from "fs";
 		// eslint-disable-next-line no-console
 		console.log("Building started...");
 		await execa("npm", ["run", "build"]);
-		await execa("touch", ["dist/CNAME"]);
-		await execa("echo", ['"thomaschoi.io"', ">>", "dist/CNAME"]);
+		await execa("cp", ["CNAME", "dist/"]);
 		// Understand if it's dist or build folder
 		const folderName = fs.existsSync("dist") ? "dist" : "build";
 		await execa("git", ["--work-tree", folderName, "add", "--all"]);
