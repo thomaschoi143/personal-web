@@ -120,14 +120,22 @@ section.contact {
 				background-position: -10% 0%;
 			}
 
-			&:hover > .card-icon {
-				color: white;
-			}
-
 			&:hover > .card-content > .card-subtitle > .typing-effect {
 				opacity: 1;
 				animation: blink 0.02s infinite steps(1),
 					typing calc(var(--n) * 0.02s) steps(var(--n)) forwards;
+			}
+
+			@media (max-width: $phone-width) {
+				.typing-effect {
+					opacity: 1;
+					animation: none !important;
+				}
+
+				&::before {
+					background-position: 100% 100%;
+					transform: scale(1.08, 1.03);
+				}
 			}
 
 			.card-content {

@@ -87,10 +87,6 @@ section {
 	padding-top: 128px;
 	padding-bottom: 128px;
 
-	&.pseudo-section {
-		height: 1000px;
-	}
-
 	.cards {
 		.card {
 			@extend .white-gradient;
@@ -104,8 +100,10 @@ section {
 			transition: all 0.3s;
 			position: relative;
 
-			&:hover {
-				transform: translateX(20px);
+			@media (pointer: fine) {
+				&:hover {
+					transform: translateX(20px);
+				}
 			}
 
 			@media (max-width: $phone-width) {
@@ -120,7 +118,11 @@ section {
 					background-position: center;
 					background-size: cover;
 					position: relative;
-					height: 150px;
+					height: 100%;
+
+					@media (max-width: $phone-width) {
+						height: 150px;
+					}
 
 					&::before {
 						content: "";
