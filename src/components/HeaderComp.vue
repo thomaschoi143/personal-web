@@ -60,16 +60,6 @@ header {
 				font-size: 30px;
 			}
 		}
-
-		nav {
-			display: grid;
-			grid-gap: 16px;
-			grid-template-columns: repeat(4, auto);
-
-			@media (max-width: $phone-width) {
-				display: none;
-			}
-		}
 	}
 
 	&.is-scrolling {
@@ -131,7 +121,7 @@ header {
 	transition: 0.4s;
 
 	a {
-		display: block;
+		display: block !important;
 		width: 100%;
 		max-width: 200px;
 		margin: 0 auto 16px;
@@ -149,7 +139,7 @@ header {
 }
 
 @media (max-width: $phone-width) {
-	.mobile-nav {
+	nav.mobile-nav {
 		display: block;
 	}
 
