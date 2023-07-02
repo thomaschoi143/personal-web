@@ -131,7 +131,8 @@ section {
 						right: 0;
 						bottom: 0;
 						z-index: 0;
-						@extend .purple-gradient;
+						// @extend .purple-gradient;
+						background: blue;
 						opacity: 0.6;
 					}
 				}
