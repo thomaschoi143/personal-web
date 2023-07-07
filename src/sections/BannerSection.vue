@@ -5,7 +5,7 @@
 				Hello World! <br />
 				I am <span class="gradient-text purple-blue-gradient">Thomas Choi</span>
 			</h1>
-			<h3>Final-Year Computer Science Students @UniMelb</h3>
+			<h3>Final-Year Computer Science Student @UniMelb</h3>
 			<h4 style="display: inline-block">
 				<span class="typing-effect show-typing-effect" style="--n: 42">
 					Software Engineer | <br />Frontend Developer | <br />Designer
