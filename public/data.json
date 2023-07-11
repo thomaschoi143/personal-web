@@ -1,6 +1,46 @@
 {
     "projects": [
         {
+            "name": "Admin Dashboard",
+            "startDate": "Jul 2023",
+            "status": "finished",
+            "icon": "adminDashboard.jpg",
+            "workload": 30,
+            "github": "https://github.com/thomaschoi143/MERN-admin-dashboard",
+            "description": [
+                "A responsive admin dashboard with data visualisation",
+                "The live demo server is automatically spun down after a period of inactivity. Please wait for around 3 mins for the server to be spun up after your first request."
+            ],
+            "link": "https://admin-frontend-g78t.onrender.com/",
+            "techs": [
+                "MERN",
+                "Material UI",
+                "Mongoose Aggregate",
+                "Nivo",
+                "Redux"
+            ]
+        },
+        {
+            "name": "Social Media App",
+            "startDate": "Jul 2023",
+            "status": "finished",
+            "icon": "socialMedia.jpg",
+            "workload": 30,
+            "github": "https://github.com/thomaschoi143/MERN-social-media",
+            "description": [
+                "A social media application with user authentication likes, adding and removing friends, posting, commenting and dark mode features",
+                "The live demo server is automatically spun down after a period of inactivity. Please wait for around 3 mins for the server to be spun up after your first request."
+            ],
+            "link": "https://social-media-frontend-f325.onrender.com",
+            "techs": [
+                "MERN",
+                "Material UI",
+                "Redux",
+                "HTTP-only cookie",
+                "JWT"
+            ]
+        },
+        {
             "name": "Personal Website",
             "startDate": "Jul 2023",
             "status": "maintaining",
