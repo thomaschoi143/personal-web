@@ -115,9 +115,19 @@ li.timeline {
 	&.left {
 		margin-left: 100%;
 
+		@media (min-width: 1300px) {
+			height: 280px;
+		}
+
 		.card {
 			left: calc(-100vw + 250px);
 			transform: translateX(-300px);
+
+			@media (min-width: 1300px) {
+				position: absolute;
+				left: auto;
+				right: 50px;
+			}
 
 			@media (max-width: $tablet-width) {
 				left: calc(-100vw + 130px);
