@@ -9,11 +9,11 @@
 					<h3>Software Engineer</h3>
 
 					<p>
-						Hi there! My name is Thomas and I'm a final-year BSc student at the
-						University of Melbourne, majoring in computing and software systems. My
-						hobbies include photography and workout. I code with passion and heart and
-						am eager to constantly explore new fields in software development and
-						technologies that improve people's lives and the world we live in.
+						Hi there! My name is Thomas and I'm a master of Computer Science student at
+						the University of Melbourne. My hobbies include photography and workout. I
+						code with passion and heart and am eager to constantly explore new fields in
+						software development and technologies that improve people's lives and the
+						world we live in.
 					</p>
 
 					<p>
@@ -58,14 +58,14 @@
 	</section>
 </template>
 <script setup>
-import { inject } from "vue";
-import TechLogo from "../components/TechLogo.vue";
+import { inject } from 'vue';
+import TechLogo from '../components/TechLogo.vue';
 
-const data = inject("$data");
+const data = inject('$data');
 const contact = data.getContact();
 </script>
 <style lang="scss" scoped>
-@import "../style.scss";
+@import '../style.scss';
 
 section {
 	.container {
@@ -90,7 +90,7 @@ section {
 				height: 180px;
 				width: 180px;
 				margin: 0 auto;
-				background-image: url("../assets/profile.jpg");
+				background-image: url('../assets/profile.jpg');
 				background-size: cover;
 				background-position: 50% 50%;
 				top: 100px;
@@ -103,7 +103,7 @@ section {
 				margin-top: -184px;
 				width: 100%;
 				height: 200px;
-				background-image: url("../assets/profileBanner.jpg");
+				background-image: url('../assets/profileBanner.jpg');
 				background-size: cover;
 				border-bottom: solid 1px lightgrey;
 			}

@@ -248,18 +248,59 @@
                 },
                 "positions": [
                     {
-                        "name": "ACRUX-II Software Engineer",
-                        "start": "Apr 2023",
+                        "name": "ACRUX-2 On-Board Computer Team Lead",
+                        "start": "Jul 2023",
                         "end": "Present",
                         "responsibilities": [
-                            "Developed on-board computer subsystem for cube satellite with a team of 4 students",
-                            "Designed a low-level API endpoint for other subsystems of the cube satellite"
+                            "Direct development of on-board computer subsystem team for student research and host weekly team meeting to continuously mentor team members and transfer technical knowledge to them",
+                            "Coordinate with leads across subsystems teams to design specifications of cube satellite",
+                            "Develop a low-level subsystem endpoint, complete with an extensive interface and hardware requirements documentation",
+                            "Integrate NASA FPrime software (C/C++) onto Raspberry Pi board for cube satellite flight applications"
                         ]
+                    },
+                    {
+                        "name": "ACRUX-2 On-Board Computer Software Engineer",
+                        "start": "Apr 2023",
+                        "end": "Jul 2023",
+                        "responsibilities": []
                     }
                 ],
                 "skills": [
                     "C++",
                     "NASA FPrime"
+                ]
+            },
+            {
+                "company": {
+                    "name": "Beyond Zero Technology",
+                    "icon": "bzt.jpg",
+                    "link": "https://www.beyondzero.tech/",
+                    "linkedin": "https://www.linkedin.com/company/beyondzero-technologies?originalSubdomain=au"
+                },
+                "positions": [
+                    {
+                        "name": "Software Engineer Intern",
+                        "start": "Aug 2023",
+                        "end": "Nov 2023",
+                        "responsibilities": [
+                            "Developed and optimised GraphQL and REST APIs in 4 servers with Nest.js, TypeORM, MongoDB and PostgreSQL in Agile team setting",
+                            "Implemented secure JWT authentication and RBAC authorisation with Auth0, fortifying system security and ensuring secure access control",
+                            "Collaborated closely with UI designers and built internal chart generator with high customisation using React and Recharts.js to boost team’s productivity",
+                            "Planned and conducted comprehensive backend unit testing with Jest for 3 servers and frontend E2E integration testing with thorough documentation to ensure system reliability and robustness"
+                        ]
+                    }
+                ],
+                "skills": [
+                    "React",
+                    "Nest.js",
+                    "Next.js",
+                    "Jest",
+                    "Python",
+                    "GraphQL",
+                    "REST APIs",
+                    "TypeORM",
+                    "PostgreSQL",
+                    "MongoDB"
                 ]
             },
             {
@@ -324,6 +365,20 @@
                 },
                 "positions": [
                     {
+                        "name": "Master of Computer Science",
+                        "start": "Mar 2024",
+                        "end": "Dec 2025"
+                    }
+                ]
+            },
+            {
+                "company": {
+                    "name": "The University of Melbourne",
+                    "icon": "unimelb.png",
+                    "link": "https://www.unimelb.edu.au/"
+                },
+                "positions": [
+                    {
                         "name": "Bsc Compouting and Software Systems",
                         "start": "Mar 2021",
                         "end": "Dec 2023",
@@ -356,6 +411,14 @@
             }
         ],
         "awards": [
+            {
+                "name": "Engineering and IT Foundation Graduate Scholarship",
+                "issuer": "The University of Melbourne",
+                "link": "https://scholarships.unimelb.edu.au/awards/engineering-it-foundation-graduate-scholarship",
+                "icon": "unimelb.png",
+                "description": "Admission scholarship for graduate study in the Faculty of Engineering and IT at UniMelb",
+                "date": "Dec 2023"
+            },
             {
                 "name": "Dean's Honours List for Top 3% - Second Year",
                 "issuer": "The University of Melbourne",

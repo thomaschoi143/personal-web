@@ -5,10 +5,10 @@
 				Hello World! <br />
 				I am <span class="gradient-text purple-blue-gradient">Thomas Choi</span>
 			</h1>
-			<h3>Final-Year Computer Science Student @UniMelb</h3>
+			<h3>Master of Computer Science Student @UniMelb</h3>
 			<h4 style="display: inline-block">
 				<span class="typing-effect show-typing-effect" style="--n: 42">
-					Software Engineer | <br />Frontend Developer | <br />Designer
+					Software Engineer | <br />Full-stack Developer | <br />Designer
 				</span>
 			</h4>
 			<h4>
@@ -24,7 +24,7 @@
 </template>
 <script setup></script>
 <style lang="scss" scope>
-@import "../style.scss";
+@import '../style.scss';
 
 section.banner {
 	color: #fff;
@@ -32,12 +32,12 @@ section.banner {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	background-image: url("../assets/banner.jpg");
+	background-image: url('../assets/banner.jpg');
 	background-position: center left;
 	background-size: cover;
 
 	&:after {
-		content: "";
+		content: '';
 		display: block;
 		position: absolute;
 		top: 0;
