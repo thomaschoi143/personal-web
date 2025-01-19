@@ -241,6 +241,30 @@
         "experience": [
             {
                 "company": {
+                    "name": "The University of Melbourne",
+                    "icon": "unimelb.png",
+                    "link": "https://www.unimelb.edu.au/"
+                },
+                "positions": [
+                    {
+                        "name": "Academic Tutor",
+                        "start": "Jul 2024",
+                        "end": "Dec 2024",
+                        "responsibilities": [
+                            "Tutored and assessed third-year major subject Models of Computation for 2 classes totalling 40+ students, collaborating with subject coordinator to enhance student learning experience",
+                            "Designed customised teaching materials aligned with students' needs and academic goals, fostering an engaging and interactive learning environment while effectively teaching discrete mathematics, logic, and computational models",
+                            "Consistently achieved highest attendance rate (95%+) for my class within subject"
+                        ]
+                    }
+                ],
+                "skills": [
+                    "Presentation",
+                    "Lesson Planning",
+                    "Student Engagement"
+                ]
+            },
+            {
+                "company": {
                     "name": "Melbourne Space Program",
                     "icon": "melbournespace.png",
                     "link": "https://www.melbournespace.com.au/",
@@ -254,8 +278,8 @@
                         "responsibilities": [
                             "Direct development of on-board computer subsystem team for student research and host weekly team meeting to continuously mentor team members and transfer technical knowledge to them",
                             "Coordinate with leads across subsystems teams to design specifications of cube satellite",
-                            "Develop a low-level subsystem endpoint, complete with an extensive interface and hardware requirements documentation",
-                            "Integrate NASA FPrime software (C/C++) onto Raspberry Pi board for cube satellite flight applications"
+                            "Design and implement a low-level subsystem endpoint, complete with an extensive interface and hardware requirements documentation",
+                            "Adopt Agile methodology and build inter-module communication system with team on EnduroSat on-board computer using SDK to meet mission’s goal efficiently"
                         ]
                     },
                     {
@@ -266,8 +290,8 @@
                     }
                 ],
                 "skills": [
-                    "C++",
-                    "NASA FPrime"
+                    "C",
+                    "Leadership"
                 ]
             },
             {
@@ -341,7 +365,8 @@
                         "start": "Jul 2022",
                         "end": "Oct 2022",
                         "responsibilities": [
-                            "Collaborated with a team of 6 people to develop front end of unified AgTech platform"
+                            "Interned in a fast-paced startup to develop frontend of unified AgTech platform in Agile environment",
+                            "Built a user preference settings feature in collaboration with a backend engineer"
                         ]
                     }
                 ],
@@ -367,7 +392,12 @@
                     {
                         "name": "Master of Computer Science",
                         "start": "Mar 2024",
-                        "end": "Dec 2025"
+                        "end": "Dec 2025",
+                        "subjects": [
+                            "AI Planning for Autonomy",
+                            "Natural Language Processing",
+                            "Computer Vision"
+                        ]
                     }
                 ]
             },
@@ -412,6 +442,14 @@
         ],
         "awards": [
             {
+                "name": "Dean's Honours List for Top 3% - Third Year",
+                "issuer": "The University of Melbourne",
+                "link": "https://science.unimelb.edu.au/about/news/celebrating-high-achieving-science-students-the-deans-honours-list-2023",
+                "icon": "unimelb.png",
+                "description": "Received this honour in recognition of the academic excellence in the third year of the bachelor study",
+                "date": "Dec 2024"
+            },
+            {
                 "name": "Engineering and IT Foundation Graduate Scholarship",
                 "issuer": "The University of Melbourne",
                 "link": "https://scholarships.unimelb.edu.au/awards/engineering-it-foundation-graduate-scholarship",
@@ -453,6 +491,13 @@
             }
         ],
         "certifications": [
+            {
+                "name": "Best Presenter in IT Project",
+                "issuer": "The University of Melbourne",
+                "link": "",
+                "icon": "unimelb.png",
+                "date": "Dec 2023"
+            },
             {
                 "name": "AWS Certified Cloud Practitioner",
                 "issuer": "Amazon Web Services (AWS)",
