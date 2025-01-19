@@ -1,4 +1,4 @@
-import data from "../public/data.json";
+import data from './assets/data.json';
 
 export default {
 	getContact() {
