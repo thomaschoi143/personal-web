@@ -1,6 +1,121 @@
 {
     "projects": [
         {
+            "name": "CV Physical Reasoning Challenge",
+            "startDate": "Sept 2024",
+            "status": "finished",
+            "icon": "CVphysicalReasoning.png",
+            "workload": 40,
+            "marks": "24 / 30",
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP90086_ComputerVison",
+            "description": [
+                "Predict the stable height of a stack with different kinds of blocks using the Shapestack images",
+                "Following the paper: Shapestacks: Learning vision-based physical intuition for generalised object stacking, 2018."
+            ],
+            "techs": [
+                "Computer Vision",
+                "Intuitive physics",
+                "ResNet",
+                "Swin Transformer",
+                "Keras"
+            ]
+        },
+        {
+            "name": "Computational Modelling and Simulation",
+            "startDate": "Aug 2024",
+            "status": "finished",
+            "icon": "simulationAndModelling.png",
+            "workload": 40,
+            "marks": "38.5 / 40",
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP90086_ComputerVison",
+            "description": [
+                "Using NetLogo, design a model and investiage which strategies can facilitate more sustainable consumption of Whitetip Sharks as common-pool resources"
+            ],
+            "techs": [
+                "Modelling",
+                "Simulation",
+                "Model Calibration",
+                "Sensitivity Analysis"
+            ]
+        },
+        {
+            "name": "NLP Automated Fact-checking System",
+            "startDate": "May 2024",
+            "status": "finished",
+            "icon": "NLPfactChecking.png",
+            "workload": 40,
+            "marks": "32 / 35",
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP90042_NaturalLanguageProcessing",
+            "description": [
+                "Given a claim and one million+ evidences, find out the related evidences and classify whether the claim is Support, Refute, Not Enough Info or Dispute",
+                "Following the paper: Combining fact extraction and verification with neural semantic matching networks, 2019"
+            ],
+            "techs": [
+                "Natural Language Processing",
+                "BiLSTM",
+                "PyTorch",
+                "Natural Language Inference"
+            ]
+        },
+        {
+            "name": "Distributed Shared White Board",
+            "startDate": "May 2024",
+            "status": "finished",
+            "icon": "sharedWhiteBoard.png",
+            "workload": 30,
+            "marks": "24.5 / 25",
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP90051_DistributedSystems/project2",
+            "description": [
+                "Collaborative white board with a chatroom and admin features, allowing users to draw different types of shapes, set the color and type text on the canvas"
+            ],
+            "techs": [
+                "Java",
+                "Swing",
+                "Decentralised",
+                "Serialisation"
+            ]
+        },
+        {
+            "name": "Multi-threaded Dictionary Server",
+            "startDate": "Apr 2024",
+            "status": "finished",
+            "icon": "dictionaryServer.png",
+            "workload": 20,
+            "marks": "15 / 15",
+            "github": "https://github.com/thomaschoi143/Unimelb/tree/main/COMP90051_DistributedSystems/project1",
+            "description": [
+                "Dictionary application with comprehensive CRUD features",
+                "Introduced a server GUI to monitor activities and revoke users"
+            ],
+            "techs": [
+                "Java",
+                "Swing",
+                "Server-client",
+                "JSON storage"
+            ]
+        },
+        {
+            "name": "Lyonville community website",
+            "startDate": "Jul 2023",
+            "status": "finished",
+            "icon": "lyonville.png",
+            "workload": 50,
+            "marks": "96 / 100",
+            "description": [
+                "A community website for a suburb in Victoria as my capstone IT project in Bachelor",
+                "Comply with client's requirements and achieve the lowest deployment cost"
+            ],
+            "link": "https://www.lyonville.org.au/",
+            "techs": [
+                "React",
+                "Tailwind CSS",
+                "Strapi",
+                "Redux",
+                "Backend Lead",
+                "Simple Storage Service"
+            ]
+        },
+        {
             "name": "Admin Dashboard",
             "startDate": "Jul 2023",
             "status": "finished",
@@ -127,7 +242,7 @@
             "icon": "pacmanToruseVerse.png",
             "workload": 30,
             "github": "https://github.com/thomaschoi143/Unimelb/tree/main/SWEN30006_SoftwareModellingAndDesign/project2",
-            "marks": "X / 20",
+            "marks": "18.5 / 20",
             "description": [
                 "Extended from Pacman in the Multiverse",
                 "Provide a map editor to add, delete, update the characters on the map",
